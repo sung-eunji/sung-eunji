@@ -1,0 +1,11 @@
+{
+  "header": {
+    "ViteandReact": "Vite and React",
+    "language": "Lan",
+    "help": "Help"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "shopping-mall": "Shopping Mall"
+  }
+}

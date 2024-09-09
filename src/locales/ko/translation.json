@@ -1,0 +1,10 @@
+{
+  "header": {
+    "language": "언어",
+    "ViteandReact": "바이트와 리액트"
+  },
+  "works": {
+    "title": "",
+    "shopping-mall": "쇼핑몰 관리"
+  }
+}

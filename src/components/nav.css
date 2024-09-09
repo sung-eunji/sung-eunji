@@ -1,0 +1,77 @@
+.navBar {
+  border: 1px solid white;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.navBar.light {
+  background-color: pink;
+  color: #000000;
+}
+
+/* 다크 모드 */
+.navBar.dark {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.navMenu {
+  display: flex;
+  gap: 20px;
+}
+
+.navMenuItem {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: aquamarine;
+}
+
+.navMenuItem .light {
+  color: black;
+}
+
+button {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.active {
+  color: rgb(58, 107, 255);
+  border-color: paleturquoise;
+}
+
+.inactive {
+  color: rgb(58, 107, 255);
+  background-color: transparent;
+}
+
+.lang-button:hover {
+  border-color: #646cff;
+}
+
+.lang-button:focus,
+.lang-button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.mode-button {
+  color: pink;
+  background-color: transparent;
+}
+
+.mode-button img {
+  width: 30px;
+}
+
+.mode-button img:hover {
+  filter: brightness(0) saturate(100%) invert(77%) sepia(14%) saturate(463%)
+    hue-rotate(123deg) brightness(95%) contrast(88%);
+}
