@@ -7,5 +7,9 @@
   "nav": {
     "dashboard": "Dashboard",
     "shopping-mall": "Shopping Mall"
+  },
+  "briefIntro": {
+    "title": "Hi, I am Eunji",
+    "description": "I am a React web developer, specializing in frontend and a strong foundation in the JavaScript ecosystem including technologies like Next.js, TypeScript, and Tailwind CSS. I am from South Korea, and currently based in France."
   }
 }

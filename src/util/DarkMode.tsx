@@ -6,7 +6,7 @@ interface DarkMode {
 export default function DarkMode({ toggleMode, darkmode }: DarkMode) {
   return (
     <div className="flex">
-      <button className=" w-[12rem] h-[12rem]" onClick={toggleMode}>
+      <button className=" w-[8rem] h-[8rem]" onClick={toggleMode}>
         <img
           src={
             darkmode === 'dark'
@@ -14,7 +14,7 @@ export default function DarkMode({ toggleMode, darkmode }: DarkMode) {
               : 'src//assets/lightMode.svg'
           }
           alt="Toggle mode"
-          width={40}
+          width={25}
         />
       </button>
     </div>

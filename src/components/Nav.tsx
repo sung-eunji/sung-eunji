@@ -9,19 +9,28 @@ import { Link } from 'react-router-dom';
 
 const Nav: React.FC = () => {
   return (
-    <div className="flex gap-[2rem] ">
+    <div className="flex gap-[2rem] text-1.25-500">
       <button>
-        <Link to={`/about`} className="text-black">
+        <Link
+          to={`/about`}
+          className="text-black hover:text-orange-600 dark:text-gray-200 dark:hover:text-orange-400"
+        >
           About
         </Link>
       </button>
       <button>
-        <Link to={`/works`} className="text-black">
+        <Link
+          to={`/works`}
+          className="text-black hover:text-orange-400 dark:text-gray-200 dark:hover:text-orange-400 "
+        >
           Works
         </Link>
       </button>
       <button>
-        <Link to={`/projects`} className=" text-black">
+        <Link
+          to={`/projects`}
+          className=" text-black hover:text-orange-400 dark:text-gray-200 dark:hover:text-orange-400 "
+        >
           Projects
         </Link>
       </button>

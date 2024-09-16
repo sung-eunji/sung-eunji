@@ -2,6 +2,7 @@ import('tailwindcss').Config;
 
 export default {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
@@ -16,7 +17,11 @@ export default {
         dark: '#121212',
       },
       fontSize: {
-        '1-900': ['1rem', { fontWeight: 500 }],
+        '0.5-500': ['0.5rem', { fontWeight: 500 }],
+        '1-500': ['1rem', { fontWeight: 500 }],
+        '1.25-300': ['1.25rem', { fontWeight: 300 }],
+        '1.25-500': ['1.25rem', { fontWeight: 500 }],
+        '1.5-500': ['1.5rem', { fontWeight: 500 }],
         '2-400': ['2rem', { fontWeight: 400 }],
         '2-700': ['2rem', { fontWeight: 700 }],
       },
