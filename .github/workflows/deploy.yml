@@ -24,6 +24,12 @@ jobs:
       - name: Build the project
         run: npm run build
 
+      - name: Test Secrets
+        run: |
+          echo "Host: ${{ secrets.AWS_HOST }}"
+          echo "User: ${{ secrets.AWS_USER }}"
+          echo "Key: ${{ secrets.AWS_KEY }}"
+
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v0.1.3
         with:
