@@ -6,12 +6,11 @@
   line-height: 1.5;
   font-synthesis: none;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 auto;
   text-align: center;
   max-width: 1280px;
   width: 100%;
   font-family: 'Noto Sans', sans-serif;
-  font-weight: 100;
   background-color: rgb(244, 244, 244);
 }
 

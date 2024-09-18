@@ -1,19 +1,16 @@
 import { useState, useRef, useEffect } from 'react';
 import i18n from './locales/i18n';
-//import { useTranslation } from 'react-i18next';
-
 import Header from './components/Header';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Works from './components/pages/Works';
 import Projects from './components/pages/Projects';
 import Welcome from './components/pages/Welcome';
-
+import ProjectItem from './components/ProjectsItem';
 import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
 
 function App() {
-  //  const { t } = useTranslation();
-
   const [activeLang, setActiveLang] = useState('');
   const [mode, setMode] = useState('light');
 
@@ -46,7 +43,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Works />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:id" element={<ProjectItem />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

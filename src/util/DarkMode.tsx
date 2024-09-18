@@ -5,18 +5,20 @@ interface DarkMode {
 
 export default function DarkMode({ toggleMode, darkmode }: DarkMode) {
   return (
-    <div className="flex">
-      <button className=" w-[8rem] h-[8rem]" onClick={toggleMode}>
-        <img
-          src={
-            darkmode === 'dark'
-              ? 'src/assets/darkMode.svg'
-              : 'src//assets/lightMode.svg'
-          }
-          alt="Toggle mode"
-          width={25}
-        />
-      </button>
-    </div>
+    <button
+      className="flex items-center justify-center w-[8rem] h-[8rem] md:w-[4rem] md:h-[4rem]  sm:h-[1rem]"
+      onClick={toggleMode}
+    >
+      <img
+        className="hover:filter hover:invert hover:border-orange-200"
+        src={
+          darkmode === 'dark'
+            ? 'src/assets/darkMode.svg'
+            : 'src//assets/lightMode.svg'
+        }
+        alt="Toggle mode"
+        width={25}
+      />
+    </button>
   );
 }

@@ -1,7 +1,6 @@
 import DarkMode from '../util/DarkMode';
 import Language from '../locales/Language';
 import Nav from './Nav';
-import { Link } from 'react-router-dom';
 
 interface HeaderProps {
   activeLang: string;
@@ -17,14 +16,14 @@ export default function Header({
   darkMode,
 }: HeaderProps) {
   return (
-    <div className="flex gap-[2rem] flex-row items-center text-2-500 justify-around dark:bg-gray-700 h-[4rem]">
-      <div className="">
-        <Link
-          to={'/'}
-          className="p-[0.5rem] text-black text-2-700 dark:text-gray-200 hover:text-orange-400 dark:hover:text-orange-400 "
+    <div className="flex gap-[2rem] flex-row items-center text-2-500 justify-around dark:bg-gray-700 h-[4rem] sm:px-[0.5rem] sm:py-[1rem] sm:w-[40rem] sm:h-[6rem]">
+      <div>
+        <a
+          href={'/'}
+          className="p-[0.5rem] text-black text-2-700 dark:text-gray-200 hover:text-orange-400 dark:hover:text-orange-400 sm:px-0"
         >
           Eunji
-        </Link>
+        </a>
       </div>
       <Nav />
       <Language activeLang={activeLang} changeLanguage={changeLanguage} />

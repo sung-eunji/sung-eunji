@@ -11,5 +11,21 @@
   "briefIntro": {
     "title": "안녕하세요, 성은지 입니다.",
     "description": "저는 리액트 웹 개발자이며, Next.js, TypeScript, Tailwind CSS와 같은 다양한 JavaScript 기술 생태계에 탄탄한 기반을 가지고 있습니다. 전 한국사람이고 현재는 프랑스에서 거주하며 활동하고 있습니다."
-  }
+  },
+  "Project-items": {
+    "Rolling": {
+      "problem": "문제",
+      "solve": "해결"
+    },
+    "Taskify": {
+      "problem": "문제",
+      "solve": "해결"
+    },
+    "Yumu": {
+      "problem": "문제",
+      "solve": "해결"
+    }
+  },
+  "Works": "일",
+  "About": "소개"
 }

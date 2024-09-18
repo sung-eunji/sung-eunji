@@ -13,7 +13,7 @@ const Nav: React.FC = () => {
       <button>
         <Link
           to={`/about`}
-          className="text-black hover:text-orange-600 dark:text-gray-200 dark:hover:text-orange-400"
+          className="text-black hover:text-orange-400 dark:text-gray-200 dark:hover:text-orange-400"
         >
           About
         </Link>
