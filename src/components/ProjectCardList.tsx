@@ -2,7 +2,7 @@ interface ProjectCardProps {
   onCardClick: (id: number) => void; // onClick 함수는 number 타입의 ID를 받음
 }
 
-export default function ProjectCard({ onCardClick }: ProjectCardProps) {
+export default function ProjectCardList({ onCardClick }: ProjectCardProps) {
   const cardList = [
     {
       id: 1,
