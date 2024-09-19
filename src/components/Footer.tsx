@@ -4,7 +4,7 @@ export default function Footer() {
       <a href="https://www.linkedin.com/in/eunji-sung-80786a27a/">
         <img
           className="dark:filter dark:invert dark:brightness-200"
-          src={'./src/assets/linkedin.svg'}
+          src={'/assets/linkedin.svg'}
           width={25}
         />
       </a>
@@ -12,7 +12,7 @@ export default function Footer() {
       <a href="https://github.com/sung-eunji">
         <img
           className="dark:filter dark:invert dark:brightness-200"
-          src={'./src/assets/github.svg'}
+          src={'/assets/github.svg'}
           width={24}
         />
       </a>

@@ -7,7 +7,7 @@ export default function Home() {
         <BriefIntro />
         <img
           className="h-[20rem] rounded-[1rem] shadow-md shadow-gray-800"
-          src="./src/assets/profile.jpg"
+          src="/assets/profile.jpg"
           alt="profile"
         />
       </div>

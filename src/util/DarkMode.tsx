@@ -12,9 +12,7 @@ export default function DarkMode({ toggleMode, darkmode }: DarkMode) {
       <img
         className="hover:filter hover:invert hover:border-orange-200"
         src={
-          darkmode === 'dark'
-            ? 'src/assets/darkMode.svg'
-            : 'src//assets/lightMode.svg'
+          darkmode === 'dark' ? '/assets/darkmode.svg' : '/assets/lightmode.svg'
         }
         alt="Toggle mode"
         width={25}
