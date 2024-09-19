@@ -26,10 +26,13 @@
       "solve": ""
     }
   },
-  "Works": "works",
+  "Work-items": {
+    "description1": "works",
+    "description2": "works2"
+  },
   "About": {
     "title1": "Core Competencies",
-    "description1": "I'm a creative, adaptable developer with a background in classic dance. Through my experience, I developed a gentle yet resilient teamwork style — freely communicating with teammates while staying focused, smart, sophisticated and professional to complete projects. I bring this approach to tech, blending diverse ideas into impactful solutions and fostering an open, collaborative work environment where communication drives success.",
+    "description1": "I'm a creative, adaptable developer with a background in choreography. Through my experience, I developed a gentle yet resilient teamwork style — freely communicating with teammates while staying focused, smart, sophisticated and professional to complete projects. I bring this approach to tech, blending diverse ideas into impactful solutions and fostering an open, collaborative work environment where communication drives success. I find great joy in exchanging diverse opinions and persuading others through clear communication. Drawing from my past as a performer, where consistent feedback and collaboration led to polished performances, I feel the same dynamic satisfaction when working with others to create meaningful outcomes.",
     "title2": "Technical Expertise",
     "description2": "With a proactive, analytical mindset and a focus on continuous improvement, I specialize in optimizing code for performance and scalability. I am committed to service stability, employing automated solutions such as CI/CD pipelines to streamline development workflows and ensure reliability. My strengths lie in identifying bottlenecks, refactoring code for maintainability, and implementing robust testing practices to reduce operational risks."
   }

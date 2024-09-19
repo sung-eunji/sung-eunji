@@ -9,6 +9,9 @@ export default {
       padding: '2rem',
     },
     extend: {
+      invert: {
+        50: '50%',
+      },
       keyframes: {
         fadeIn: {
           '0%': { opacity: 0, transform: 'translateY(20px' },
