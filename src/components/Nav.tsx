@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const Nav: React.FC = () => {
   return (
-    <div className="flex gap-[2rem] text-1.25-500 sm:w-[10rem] sm:text-1-500 sm:gap-[1.2rem]">
+    <div className="flex gap-[6rem] text-1.7-500 sm:w-[10rem] sm:text-1-500 sm:gap-[1.2rem]">
       <button>
         <Link
           to={`/about`}

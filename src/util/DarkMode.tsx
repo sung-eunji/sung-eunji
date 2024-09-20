@@ -6,7 +6,7 @@ interface DarkMode {
 export default function DarkMode({ toggleMode, darkmode }: DarkMode) {
   return (
     <button
-      className="flex items-center justify-center w-[8rem] h-[8rem] md:w-[4rem] md:h-[4rem]  sm:h-[1rem]"
+      className="flex items-center justify-center w-[10rem] h-[10rem] md:w-[4rem] md:h-[4rem] sm:h-[1rem]"
       onClick={toggleMode}
     >
       <img

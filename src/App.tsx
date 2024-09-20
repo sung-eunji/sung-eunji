@@ -5,7 +5,6 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Works from './components/pages/Works';
 import Projects from './components/pages/Projects';
-import Welcome from './components/pages/Welcome';
 import ProjectItem from './components/ProjectsItem';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
@@ -39,7 +38,6 @@ function App() {
       />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/welcome" element={<Welcome />} />
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Works />} />
         <Route path="/projects" element={<Projects />} />
