@@ -6,8 +6,7 @@ interface Project {
   stacks: string[];
   github: string;
   demoLink: string;
-  problem: string;
-  solve: string;
+  logo: string;
 }
 
 const ProjectData: Project[] = [
@@ -19,8 +18,7 @@ const ProjectData: Project[] = [
     stacks: ['React', 'Styled Component'],
     github: 'https://github.com/codeit-sprint2-team-12/team-12-rolling',
     demoLink: 'https://fluffy-shortbread-07838a.netlify.app',
-    problem: '',
-    solve: '',
+    logo: '/assets/logo-rolling.svg',
   },
   {
     id: 2,
@@ -30,8 +28,7 @@ const ProjectData: Project[] = [
     stacks: ['Next.js 13 (page routing)', 'TypeScript', 'TailwindCSS'],
     github: 'https://github.com/codeit-fe2-2/taskify',
     demoLink: 'https://taskify-harigari.vercel.app',
-    problem: '',
-    solve: '',
+    logo: '/assets/logo-taskify.svg',
   },
   {
     id: 3,
@@ -41,8 +38,7 @@ const ProjectData: Project[] = [
     stacks: ['Next.js 13 (page routing)', 'TypeScript', 'TailwindCSS'],
     github: 'https://github.com/Team-YUMU/YUMU-FE',
     demoLink: 'https://yu-mu.vercel.app',
-    problem: '',
-    solve: '',
+    logo: '/assets/logo-yumu.svg',
   },
 ];
 

@@ -1,4 +1,5 @@
 {
+  "back-button": "back to previous",
   "header": {
     "ViteandReact": "Vite and React",
     "language": "Lan",
@@ -13,19 +14,66 @@
     "description": "I am a React web developer, specializing in frontend and a strong foundation in the JavaScript ecosystem including technologies like Next.js, TypeScript, and Tailwind CSS. I am from South Korea, and currently based in France."
   },
   "Project-items": {
-    "Rolling": {
-      "problem": "problem",
-      "solve": ""
+    "title1-learn": "From this Project, I earned...",
+    "title2-challenges": "Challenges Faced During the Project",
+    "title3-solution": "Solutions Implemented",
+    "title4-result": "Result",
+
+    "1": {
+      "subtitle1-1": "1. Dynamic Data Management",
+      "description1-1": "Through working on this project, I developed a solid understanding of managing dynamic data, including detecting changes and optimizing state updates. This experience sharpened my ability to handle complex data flows and improve performance, particularly in rendering.",
+      "subtitle1-2": "2. Pair and Group Programming",
+      "description1-2": "Participating in pair and group programming sessions allowed me to become more adaptable to different working styles. Working side-by-side with teammates not only improved my technical skills but also enhanced my ability to give and receive constructive feedback. This helped create a stronger, more cohesive team dynamic.",
+
+      "subtitle2-1": "1. Rendering Speed Optimization",
+      "description2-1": "Managing dynamic data with hooks was difficult due to performance issues, including image flickering, background image load delays, and map function errors that occasionally led to missing content or error pages. These problems significantly affected the user experience.",
+      "subtitle2-2": "2. Confusion in Team Roles during Pair Programming",
+      "description2-2": "In the initial stages of pair and group programming sessions, there was some confusion surrounding the driver and navigator roles, which led to inefficiencies. This made it challenging for the team to stay aligned and hindered the progress at times.",
+
+      "subtitle3-1": "1.Segmenting Data Processing Stages",
+      "description3-1": "To address data management issues, we implemented try-catch blocks to break down data processing stages. This solution helped isolate errors, enabling quicker detection, handling, and recovery. Additionally, it improved the application's performance by streamlining the data flow.",
+      "subtitle3-2": "2.Role Clarification and Improved Communication",
+      "description3-2": "As a team, we clarified the roles of driver and navigator in pair programming, which significantly improved team coordination. Through regular communication and feedback, we fostered a more collaborative environment that helped us move past initial inefficiencies and work more effectively together.",
+
+      "description4-1": "As a result of overcoming these challenges, I strengthened my abilities in dynamic data management and performance optimization, learning to handle complex rendering issues more effectively. Additionally, the team collaboration experience, particularly through pair and group programming, enhanced my communication skills and adaptability in a team setting. Finally, I developed a deep understanding of error handling and debugging, which further improved the overall quality and performance of the application."
     },
-    "Taskify": {
-      "problem": "problem",
-      "solve": ""
+    "2": {
+      "subtitle1-1": "1. Advanced Performance Optimization",
+      "description1-1": "Through this project, I gained a deeper understanding of performance bottlenecks in web applications, particularly related to rendering. I learned to utilize React's useMemo and useCallback hooks to minimize unnecessary re-renders, leading to significant improvements in user experience. Additionally, I focused on optimizing data-fetching strategies and reducing memory leaks to ensure smooth interaction.",
+      "subtitle1-2": "2. Effective Team Communication",
+      "description1-2": "By engaging in pair and group programming, I honed my ability to communicate complex technical concepts clearly with teammates. We regularly exchanged feedback to identify performance issues and brainstorm optimization strategies. This collaborative approach enhanced our efficiency in solving problems and helped create a productive team environment.",
+
+      "subtitle2-1": "1. Slow Initial Load Time and Rendering Lag",
+      "description2-1": "At the start, the aplication suffered from slow load times and rendering delays when dealing with large datasets. Components were frequently re-rendering unnecessarily, resulting in sluggish performance and poor user experience, especially during intensive operations like data filtering and visualization.",
+      "subtitle2-2": "2. Managing Side Effects with React Hooks",
+      "description2-2": "Optimizing side effects with hooks such as useEffect presented challenges. Inefficient data fetching and unoptimized effect dependencies caused redundant API calls, memory leaks, and performance drops, especially during rapid state changes and component unmounting.",
+
+      "subtitle3-1": "1.Memoization and Debouncing Techniques",
+      "description3-1": "To resolve rendering inefficiencies, I utilized React's useMemo and useCallback to optimize component rendering. By memoizing expensive computations and debouncing search inputs, I reduced redundant re-renders and improved the responsiveness of the application. These techniques ensured that updates were applied only when necessary, thus optimizing performance.",
+      "subtitle3-2": "2.Refining Data Fetching with Lazy Loading",
+      "description3-2": "We introduced lazy loading for non-critical components and implemented pagination for large datasets to minimize initial load times. Additionally, I refactored data-fetching strategies to prevent excessive API calls, ensuring that components were only updated when data had actually changed. These adjustments reduced memory consumption and improved the app's overall performance.",
+      "description4-1": "By tackling the challenges of slow load times and optimizing React hooks, I significantly improved the performance of the application, reducing unnecessary re-renders and improving user interaction speed. These efforts taught me to strategically manage side effects and state updates, leading to more efficient, scalable applications. Moreover, the collaborative process in pair and group programming sessions improved my ability to communicate technical details effectively and foster a problem-solving mindset within the team."
     },
-    "Yumu": {
-      "problem": "problem",
-      "solve": ""
+    "3": {
+      "subtitle1-1": "1. Deeper Understanding of OAuth 2.0 Authentication",
+      "description1-1": "Through this project, I gained a comprehensive understanding of OAuth 2.0, particularly regarding the flow of authentication and authorization between clients, servers, and third-party providers. I learned how to manage access tokens and refresh tokens effectively, which improved the overall security and user experience of the application. This also deepened my knowledge of external API communications and handling OAuth tokens efficiently.",
+      "subtitle1-2": "2. Collaborative Problem Solving with Backend Engineers",
+      "description1-2": "By engaging in close collaboration with backend engineers, I enhanced my ability to communicate technical challenges clearly, particularly related to authentication protocols. We worked together to resolve API issues and improve token storage strategies. This collaborative environment enabled us to implement OAuth 2.0 more effectively and ensure a seamless integration of the login/signup features.",
+
+      "subtitle2-1": "1. Handling OAuth 2.0 Token Expiration and Security",
+      "description2-1": "Initially, I faced difficulties managing token expiration and handling the OAuth 2.0 token lifecycle. The challenge was ensuring secure logout and refresh token workflows while maintaining session persistence for the user. Token handling errors occasionally led to users being logged out unexpectedly, which negatively impacted the user experience.",
+      "subtitle2-2": "2. Validation Overlap with Multiple Libraries",
+      "description2-2": "While integrating OAuth 2.0 with the login/signup process, I used React-hook-form, zod, and shad/cn for form validation. However, using multiple validation libraries resulted in overlapping error messages, making it challenging to provide clear feedback to users and maintain a smooth signup/login flow.",
+
+      "subtitle3-1": "1. Limiting zod Validation and Optimizing Token Handling",
+      "description3-1": "To address validation issues, I restricted zod to basic validation tasks and streamlined the form handling by adding custom onClick events to reset error messages. Additionally, I improved the token handling workflow by segmenting the OAuth 2.0 process using try-catch blocks to manage token expiration and session recovery efficiently. This approach ensured a more secure and consistent authentication process.",
+      "subtitle3-2": "2. Enhancing OAuth Communication with Backend Support",
+      "description3-2": "I worked closely with backend engineers to refine the OAuth 2.0 flow. We reviewed the Kakao login API documentation to ensure proper communication between the client, server, and the OAuth provider. By clearly defining token storage mechanisms (local storage, session storage, cookies), we enhanced security and reduced the likelihood of CORS errors during API communication.",
+
+      "description4-1": "By overcoming the challenges related to OAuth 2.0 token management and form validation, I significantly improved the security and functionality of the login/signup processes. This project helped me master token-based authentication and the OAuth 2.0 lifecycle, leading to better user experience and more robust security protocols. Moreover, working with backend engineers throughout the project enhanced my communication skills and my ability to resolve technical issues collaboratively."
     }
   },
+
   "Work-items": {
     "description1": "works",
     "description2": "works2"
