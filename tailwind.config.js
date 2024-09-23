@@ -34,6 +34,7 @@ export default {
         '0.9-300': ['0.9rem', { fontWeight: 300 }],
         '1-300': ['1rem', { fontWeight: 300 }],
         '1-500': ['1rem', { fontWeight: 500 }],
+        '1.1-300': ['1.1rem', { fontWeight: 300 }],
         '1.25-300': ['1.25rem', { fontWeight: 300 }],
         '1.25-500': ['1.25rem', { fontWeight: 500 }],
         '1.5-500': ['1.5rem', { fontWeight: 500 }],

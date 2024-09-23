@@ -6,8 +6,7 @@ interface Work {
   stacks: string[];
   github: string;
   demoLink: string;
-  problem: string;
-  solve: string;
+  image: string;
 }
 
 const WorkData: Work = {
@@ -25,8 +24,7 @@ const WorkData: Work = {
   ],
   github: 'https://github.com/BoostPerformance/fitculator-io',
   demoLink: 'https://fitculator.io',
-  problem: '',
-  solve: '',
+  image: '/assets/fitculator.svg',
 };
 
 export default WorkData;
