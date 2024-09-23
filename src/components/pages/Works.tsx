@@ -46,10 +46,12 @@ export default function Works() {
         </ul>
       </div>
 
-      <div className="flex flex-col gap-[1rem]">
-        <h1>{t(`Work-items.description1`)}</h1>
-        <h1>{t(`Work-items.description2`)}</h1>
-      </div>
+      <ul className="flex flex-col gap-[1rem] text-1.25-300 sm:text-0.7-300 w-[48rem] text-left list-disc ">
+        <li>{t(`Work-items.description1`)}</li>
+        <li>{t(`Work-items.description2`)}</li>
+        <li>{t(`Work-items.description3`)}</li>
+        <li>{t(`Work-items.description4`)}</li>
+      </ul>
 
       <button
         className="hover:bg-gray-200 p-[0.4rem] rounded-[1rem]"

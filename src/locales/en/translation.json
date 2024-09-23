@@ -75,8 +75,10 @@
   },
 
   "Work-items": {
-    "description1": "works",
-    "description2": "works2"
+    "description1": "Designed and implemented a scalable database schema using Supabase, ensuring seamless data management and API routing for backend operations",
+    "description2": "Improved data integrity and application performance by conducting comprehensive testing with Prisma.",
+    "description3": "Collaborated closely with designers using Figma to develop a user-friendly payment service UI, which received positive feedback from users.",
+    "description4": "Contributed to a 25% increase in mobile user engagement and reduced bounce rates, as measured by Google Analytics, after optimizing the front-end for performance and user experience."
   },
   "About": {
     "title1": "Core Competencies",

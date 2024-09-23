@@ -16,7 +16,7 @@ const WorkData: Work = {
   title: 'Fitculator',
   position: 'Fullstack Developer',
   stacks: [
-    'Next.js 13 (app routing)',
+    'Next.js 14 (app routing)',
     'TypeScript',
     'TailwindCSS',
     'React-Hook-Form',
