@@ -54,7 +54,7 @@ export default function Works() {
 
       <ul className="flex flex-col gap-[3rem] text-1.25-300 sm:text-0.7-300 w-[52rem] text-left">
         <div>
-          <li className="text-1.5-500 pb-[1rem] sm:text-1-500">
+          <li className="text-1.5-500 pb-[2rem] sm:text-1-500">
             {t(`Work-items.title1`)}
           </li>
           <li className="text-1.25-300 text-start sm:text-0.9-300 pb-[2rem]">
@@ -65,7 +65,7 @@ export default function Works() {
           </li>
         </div>
         <div>
-          <li className="text-1.5-500 pb-[1rem] sm:text-1-500">
+          <li className="text-1.5-500 pb-[2rem] sm:text-1-500">
             {t(`Work-items.title2`)}
           </li>
           <li className="text-1.25-300 text-start sm:text-0.9-300">
@@ -76,7 +76,7 @@ export default function Works() {
           </li>
         </div>
         <div>
-          <li className="text-1.5-500 pb-[1rem] sm:text-1-500">
+          <li className="text-1.5-500 pb-[2rem] sm:text-1-500">
             {t(`Work-items.title3`)}
           </li>
           <li className="text-1.25-300 text-start sm:text-0.9-300">
@@ -86,17 +86,7 @@ export default function Works() {
             />
           </li>
         </div>
-        <div>
-          <li className="text-1.5-500 pb-[1rem] sm:text-1-500">
-            {t(`Work-items.title4`)}
-          </li>
-          <li className="text-1.25-300 text-start sm:text-0.9-300">
-            <Trans
-              i18nKey="Work-items.description4"
-              components={{ br: <br /> }}
-            />
-          </li>
-        </div>
+
         <div>
           <li className="text-1.5-500 sm:text-1-500 py-[2rem]">
             {t(`Work-items.title5`)}
