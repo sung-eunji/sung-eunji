@@ -6,8 +6,8 @@ export default function Home() {
       <div className="flex px-[6.5rem] gap-[2rem] items-center sm:px-[2.5rem]">
         <BriefIntro />
         <img
-          className="h-[20rem] rounded-[0.5rem] shadow-sm shadow-gray-700"
-          src="/assets/profile.jpg"
+          className="h-[20rem] rounded-[20rem] shadow-lg shadow-gray-300"
+          src="/assets/profile1.png"
           alt="profile"
         />
       </div>

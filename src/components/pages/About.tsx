@@ -9,7 +9,6 @@ export default function About() {
         <h1 className="text-1.7-500 ">{t(`About.title1`)}</h1>
         <h2 className="text-start text-1.25-300">{t(`About.description1`)}</h2>
       </div>
-
       <div className="flex flex-col gap-[1rem] items-end p-[2rem] h-[20rem] justify-center sm:gap-[3rem]">
         <h1 className="text-1.7-500 ">{t(`About.title2`)}</h1>
         <h2 className="text-end text-1.25-300">{t(`About.description2`)}</h2>
