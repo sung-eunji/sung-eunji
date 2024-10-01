@@ -6,14 +6,17 @@ import About from './components/pages/About';
 import Works from './components/pages/Works';
 import Projects from './components/pages/Projects';
 import ProjectItem from './components/ProjectsItem';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Footer from './components/Footer';
+import { AnimatePresence } from 'framer-motion';
+import Template from './components/Templete';
 
 function App() {
   const [activeLang, setActiveLang] = useState('');
   const [mode, setMode] = useState('light');
 
   const languageRef = useRef<null | HTMLDivElement>(null);
+  const location = useLocation();
 
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
@@ -36,13 +39,53 @@ function App() {
         toggleMode={toggleMode}
         darkMode={mode}
       />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/works" element={<Works />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/:id" element={<ProjectItem />} />
-      </Routes>
+
+      {/* AnimatePresence를 사용하여 페이지 전환 시 애니메이션 적용 */}
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route
+            path="/"
+            element={
+              <Template>
+                <Home />
+              </Template>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <Template>
+                <About />
+              </Template>
+            }
+          />
+          <Route
+            path="/works"
+            element={
+              <Template>
+                <Works />
+              </Template>
+            }
+          />
+          <Route
+            path="/projects"
+            element={
+              <Template>
+                <Projects />
+              </Template>
+            }
+          />
+          <Route
+            path="/projects/:id"
+            element={
+              <Template>
+                <ProjectItem />
+              </Template>
+            }
+          />
+        </Routes>
+      </AnimatePresence>
+
       <Footer />
     </div>
   );

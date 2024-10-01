@@ -24,7 +24,7 @@ const WorkData: Work = {
   ],
   github: 'https://github.com/BoostPerformance/fitculator-io',
   demoLink: 'https://fitculator.io',
-  image: '/assets/fitculator.svg',
+  image: '/assets/fitculator-logo.png',
 };
 
 export default WorkData;
