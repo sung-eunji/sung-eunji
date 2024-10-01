@@ -86,12 +86,31 @@ export default function Works() {
             />
           </li>
         </div>
+        <div>
+          <li className="text-1.5-500 pb-[2rem] sm:text-1-500">
+            {t(`Work-items.title4`)}
+          </li>
+          <li className="text-1.25-300 text-start sm:text-0.9-300">
+            <Trans
+              i18nKey="Work-items.description4"
+              components={{ br: <br /> }}
+            />
+          </li>
+        </div>
 
         <div>
           <li className="text-1.5-500 sm:text-1-500 py-[2rem]">
             {t(`Work-items.title5`)}
           </li>
-          <Trans i18nKey="Work-items.solutions" components={{ br: <br /> }} />
+          <li>
+            <Trans
+              i18nKey="Work-items.challenges"
+              components={{ br: <br /> }}
+            />
+          </li>
+          <li className="py-[2rem]">
+            <Trans i18nKey="Work-items.solutions" components={{ br: <br /> }} />
+          </li>
         </div>
       </ul>
 
