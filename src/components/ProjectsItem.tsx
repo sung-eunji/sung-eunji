@@ -41,7 +41,7 @@ export default function ProjectItem() {
               </a>
               <a href={selectedProject.demoLink}>
                 <img
-                  className="dark:filter dark:invert dark:brightness-200"
+                  className="filter invert dark:brightness-200"
                   src={'/assets/link.svg'}
                   width={20}
                 />

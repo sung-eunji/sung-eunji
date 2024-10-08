@@ -46,6 +46,7 @@ export default {
         '2-700': ['2rem', { fontWeight: 700 }],
       },
       screens: {
+        lg: { min: '1025px' },
         md: { max: '1024px' },
         sm: { max: '768px' },
       },

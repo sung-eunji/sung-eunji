@@ -17,7 +17,7 @@ export default function Footer() {
   };
 
   return (
-    <div className="flex flex-col gap-[1rem] justify-center items-center dark:bg-gray-700 pb-[3rem] sm:w-[34rem]">
+    <div className="flex flex-col gap-[1rem] justify-center items-center dark:bg-gray-700 pb-[3rem] w-full sm:w-[40rem]">
       <div className="flex gap-[1rem] items-center">
         <a href="https://www.linkedin.com/in/eunji-sung-80786a27a/">
           <img
