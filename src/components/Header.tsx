@@ -16,11 +16,11 @@ export default function Header({
   darkMode,
 }: HeaderProps) {
   return (
-    <div className="container flex gap-[1rem]  items-center justify-center sm:pl-[2rem] sm:gap-[0.7rem]">
-      <div>
+    <div className="container flex gap-[1rem]  items-center justify-center sm:pl-[2rem] sm:gap-[0.7rem] sm:px-[1rem]">
+      <div className="pl-[1rem]">
         <a
           href={'/'}
-          className=" text-black lg:text-2-700 dark:text-gray-200 hover:text-orange-400 dark:hover:text-orange-400 sm:px-0 sm:text-1.1-700 pl-[10rem]"
+          className=" text-black lg:text-2-700 dark:text-gray-200 hover:text-orange-400 dark:hover:text-orange-400 sm:px-0 sm:text-1.1-700"
         >
           Eunji
         </a>
