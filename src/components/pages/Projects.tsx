@@ -9,7 +9,7 @@ export default function Projects() {
   };
 
   return (
-    <div className="dark:bg-gray-700 sm:w-[38rem]">
+    <div className="dark:bg-gray-700 sm:w-full">
       <ProjectCardList onCardClick={handleCardClick} />
     </div>
   );

@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="flex gap-[1rem] items-center w-[100%] justify-center">
         <a href="https://www.linkedin.com/in/eunji-sung-80786a27a/">
           <img
-            className="dark:filter dark:invert dark:brightness-200"
+            className="dark:filter dark:invert dark:brightness-200 sm:w-[1.2rem]"
             src={'/assets/linkedin.svg'}
             width={25}
           />
@@ -29,7 +29,7 @@ export default function Footer() {
 
         <a href="https://github.com/sung-eunji">
           <img
-            className="dark:filter dark:invert dark:brightness-200"
+            className="dark:filter dark:invert dark:brightness-200 sm:w-[1.2rem]"
             src={'/assets/github.svg'}
             width={24}
           />
@@ -38,7 +38,7 @@ export default function Footer() {
           <button onClick={() => incrementLikes(0)}>
             <img
               src="/assets/thumb-up.svg"
-              className="w-[1.5rem]"
+              className="w-[1.5rem] sm:w-[1.2rem]"
               alt="thumb"
             />
           </button>

@@ -29,8 +29,11 @@ export default {
         dark: '#121212',
       },
       fontSize: {
+        '0.3-500': ['0.5rem', { fontWeight: 500 }],
         '0.5-500': ['0.5rem', { fontWeight: 500 }],
         '0.7-300': ['0.7rem', { fontWeight: 300 }],
+        '0.8-300': ['0.8rem', { fontWeight: 300 }],
+        '0.8-400': ['0.8rem', { fontWeight: 400 }],
         '0.9-300': ['0.9rem', { fontWeight: 300 }],
         '0.9-500': ['0.9rem', { fontWeight: 500 }],
         '1-300': ['1rem', { fontWeight: 300 }],
