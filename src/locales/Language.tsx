@@ -8,14 +8,14 @@ export default function Language({
   changeLanguage,
 }: LanguageProps) {
   return (
-    <div className="flex gap-[5rem] text-1.7-500 sm:text-1-500 sm:gap-[0.7rem]">
+    <div className="flex gap-[5rem] text-1.7-500 sm:text-0.9-500 sm:gap-[0.4rem] pl-[1rem] sm:pl-0">
       <button
         className={`dark:text-gray-200  hover:text-orange-400 dark:hover:text-orange-400 navMenuItem ${
           activeLang === 'ko' ? 'active' : 'inactive'
         }`}
         onClick={() => changeLanguage('ko')}
       >
-        Korean
+        Kor
       </button>
       <button
         className={`dark:text-gray-200  hover:text-orange-400 dark:hover:text-orange-400 navMenuItem ${
@@ -23,7 +23,7 @@ export default function Language({
         }`}
         onClick={() => changeLanguage('en')}
       >
-        English
+        Eng
       </button>
     </div>
   );

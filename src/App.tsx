@@ -40,7 +40,6 @@ function App() {
         darkMode={mode}
       />
 
-      {/* AnimatePresence를 사용하여 페이지 전환 시 애니메이션 적용 */}
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route

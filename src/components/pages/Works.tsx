@@ -8,11 +8,11 @@ export default function Works() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col gap-[3rem] py-[10rem] dark:bg-gray-700 dark:text-gray-200 items-center ">
+    <div className="flex flex-col gap-[3rem] py-[10rem] dark:bg-gray-700 dark:text-gray-200 items-center sm:w-full sm:py-[2rem]">
       <div className="flex flex-col gap-[0.5rem] items-center">
         <div className="flex flex-col items-center gap-[0.5rem]">
           <img
-            className=" p-[1rem] rounded-[10rem]"
+            className=" p-[1rem] rounded-[10rem] sm:w-[15rem]"
             src={WorkData.image}
             width={400}
           />
@@ -40,10 +40,10 @@ export default function Works() {
             {WorkData.duration}
           </p>
         </div>
-        <ul className="flex gap-[1rem] text-0.9-300">
+        <ul className="flex gap-[1rem] text-0.9-300 sm:text-0.7-300 sm:grid-cols-3 sm:grid">
           {WorkData.stacks.map((stack, index) => (
             <li
-              className="bg-orange-300 dark:text-gray-600 rounded-[1rem] p-[0.3rem]"
+              className="bg-orange-300 dark:text-gray-600 rounded-[1rem] p-[0.3rem] sm:p-[0.2rem]"
               key={index}
             >
               {stack}
@@ -52,8 +52,8 @@ export default function Works() {
         </ul>
       </div>
 
-      <ul className="flex flex-col gap-[3rem] text-1.25-300 sm:text-0.7-300 w-[52rem] text-left">
-        <div>
+      <ul className="flex flex-col gap-[3rem] text-1.25-300 sm:text-0.7-300 lg:w-[52rem] text-left sm:w-full">
+        <div className="sm:w-[22rem] sm:px-[1rem]">
           <li className="text-1.5-500 pb-[2rem] sm:text-1-500">
             {t(`Work-items.title1`)}
           </li>
@@ -64,7 +64,7 @@ export default function Works() {
             />
           </li>
         </div>
-        <div>
+        <div className="sm:w-[22rem] sm:px-[1rem]">
           <li className="text-1.5-500 pb-[2rem] sm:text-1-500">
             {t(`Work-items.title2`)}
           </li>
@@ -75,7 +75,7 @@ export default function Works() {
             />
           </li>
         </div>
-        <div>
+        <div className="sm:w-[22rem] sm:px-[1rem]">
           <li className="text-1.5-500 pb-[2rem] sm:text-1-500">
             {t(`Work-items.title3`)}
           </li>
@@ -86,7 +86,7 @@ export default function Works() {
             />
           </li>
         </div>
-        <div>
+        <div className="sm:w-[22rem] sm:px-[1rem]">
           <li className="text-1.5-500 pb-[2rem] sm:text-1-500">
             {t(`Work-items.title4`)}
           </li>
@@ -98,17 +98,17 @@ export default function Works() {
           </li>
         </div>
 
-        <div>
+        <div className="sm:w-[22rem] sm:px-[1rem]">
           <li className="text-1.5-500 sm:text-1-500 py-[2rem]">
             {t(`Work-items.title5`)}
           </li>
-          <li>
+          <li className="text-1.25-300 text-start sm:text-0.9-300">
             <Trans
               i18nKey="Work-items.challenges"
               components={{ br: <br /> }}
             />
           </li>
-          <li className="py-[2rem]">
+          <li className="text-1.25-300 text-start sm:text-0.9-300 py-[2rem]">
             <Trans i18nKey="Work-items.solutions" components={{ br: <br /> }} />
           </li>
         </div>

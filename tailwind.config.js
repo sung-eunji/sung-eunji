@@ -6,7 +6,7 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
+      padding: '1rem',
     },
     extend: {
       invert: {
@@ -32,9 +32,11 @@ export default {
         '0.5-500': ['0.5rem', { fontWeight: 500 }],
         '0.7-300': ['0.7rem', { fontWeight: 300 }],
         '0.9-300': ['0.9rem', { fontWeight: 300 }],
+        '0.9-500': ['0.9rem', { fontWeight: 500 }],
         '1-300': ['1rem', { fontWeight: 300 }],
         '1-500': ['1rem', { fontWeight: 500 }],
         '1.1-300': ['1.1rem', { fontWeight: 300 }],
+        '1.1-700': ['1.1rem', { fontWeight: 700 }],
         '1.25-300': ['1.25rem', { fontWeight: 300 }],
         '1.25-500': ['1.25rem', { fontWeight: 500 }],
         '1.5-500': ['1.5rem', { fontWeight: 500 }],
