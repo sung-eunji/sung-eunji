@@ -1,11 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import WorkData from '../WorkData';
 import { useNavigate } from 'react-router-dom';
-import { Trans } from 'react-i18next';
+// import { Trans } from 'react-i18next';
+import WorkCardList from '../WorkCardList';
 
 export default function Works() {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const handleCardClick = (id: number) => {
+    navigate(`/work/fitculator/${id}`);
+  };
 
   return (
     <div className="flex flex-col gap-[3rem] py-[10rem] dark:bg-gray-700 dark:text-gray-200 items-center sm:w-full sm:py-[2rem]">
@@ -40,7 +44,8 @@ export default function Works() {
             {WorkData.duration}
           </p>
         </div>
-        <ul className="flex gap-[1rem] text-0.9-300 sm:text-0.7-300 sm:grid-cols-3 sm:grid">
+
+        {/* <ul className="flex gap-[1rem] text-0.9-300 sm:text-0.7-300 sm:grid-cols-3 sm:grid">
           {WorkData.stacks.map((stack, index) => (
             <li
               className="bg-orange-300 dark:text-gray-600 rounded-[1rem] p-[0.3rem] sm:p-[0.2rem]"
@@ -49,10 +54,10 @@ export default function Works() {
               {stack}
             </li>
           ))}
-        </ul>
-      </div>
-
-      <ul className="flex flex-col gap-[3rem] text-1.25-300 sm:text-0.7-300 lg:w-[52rem] text-left sm:w-full">
+        </ul> */}
+      </div>{' '}
+      <WorkCardList onCardClick={handleCardClick} />
+      {/* <ul className="flex flex-col gap-[3rem] text-1.25-300 sm:text-0.7-300 lg:w-[52rem] text-left sm:w-full">
         <div className="sm:w-[22rem] sm:px-[1rem]">
           <li className="text-1.5-500 pb-[2rem] sm:text-1-500">
             {t(`Work-items.title1`)}
@@ -112,8 +117,7 @@ export default function Works() {
             <Trans i18nKey="Work-items.solutions" components={{ br: <br /> }} />
           </li>
         </div>
-      </ul>
-
+      </ul> */}
       <button
         className="hover:bg-gray-200 p-[0.4rem] rounded-[1rem]"
         onClick={() => {
