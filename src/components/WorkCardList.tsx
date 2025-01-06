@@ -1,13 +1,18 @@
-import WorkCardListData from './WorkCardListData';
+import FitculatorWorkCardListData from '../data/FitculatorWorkCardListData';
+import { useNavigate } from 'react-router-dom';
 
-interface ProjectCardProps {
-  onCardClick: (id: number) => void; // onClick 함수는 number 타입의 ID를 받음
-}
+// interface ProjectCardProps {
+//   onCardClick: (id: number) => void; //
+// }
 
-export default function WorkCardList({ onCardClick }: ProjectCardProps) {
+export default function WorkCardList() {
+  const navigate = useNavigate();
+  const handleCardClick = (id: number) => {
+    navigate(`/fitculator/${id}`);
+  };
   return (
     <div className="flex flex-col gap-[3rem] items-left py-[5rem] sm:pt-[3rem] sm:pb-[6.5rem] sm:gap-[5rem]">
-      {WorkCardListData.slice()
+      {FitculatorWorkCardListData.slice()
         .reverse()
         .map((card) => (
           <div className="flex gap-[0.5rem] w-[35rem] sm:w-[20rem]">
@@ -23,14 +28,14 @@ export default function WorkCardList({ onCardClick }: ProjectCardProps) {
               <button
                 className="hover:bg-gray-300 p-[0.7rem] rounded-[1rem] text-gray-700 bg-gray-200 dark:hover:bg-gray-300 hover:drop-shadow-md sm:text-0.7-300 sm:p-[0.4rem] sm:rounded-[0.7rem]"
                 key={card.id}
-                onClick={() => onCardClick(card.id)}
+                onClick={() => handleCardClick(card.id)}
               >
                 see detail →
               </button>
             </div>
             <img
               className="rounded-[1rem] drop-shadow-md w-[20rem] sm:h-[8rem] sm:w-[10rem]"
-              src={card.image}
+              src={card.logo}
               alt="example-image"
             />
           </div>

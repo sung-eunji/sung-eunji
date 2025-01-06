@@ -10,6 +10,9 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import Footer from './components/Footer';
 import { AnimatePresence } from 'framer-motion';
 import Template from './components/Templete';
+//import WorkItem from './components/WorkItem';
+import ProjectsinWork from './components/ProjectsinWork';
+import WorkCardList from './components/WorkCardList';
 
 function App() {
   const [activeLang, setActiveLang] = useState('');
@@ -79,6 +82,23 @@ function App() {
             element={
               <Template>
                 <ProjectItem />
+              </Template>
+            }
+          />
+
+          <Route
+            path="works/:id"
+            element={
+              <Template>
+                <WorkCardList />
+              </Template>
+            }
+          />
+          <Route
+            path="fitculator/:id"
+            element={
+              <Template>
+                <ProjectsinWork />
               </Template>
             }
           />

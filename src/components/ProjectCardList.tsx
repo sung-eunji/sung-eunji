@@ -1,4 +1,4 @@
-import ProjectCardListData from './ProjectCardListData';
+import ProjectCardListData from '../data/ProjectCardListData';
 
 interface ProjectCardProps {
   onCardClick: (id: number) => void; // onClick 함수는 number 타입의 ID를 받음
