@@ -2,6 +2,7 @@ interface WorkCard {
   id: number;
   title: string;
   position: string;
+  businessform: string;
   duration: string;
   demoLink: string;
   github: string;
@@ -13,7 +14,8 @@ const FitculatorWorkCardListData: WorkCard[] = [
   {
     id: 1,
     duration: 'June 2024 (on going maintenance)',
-    title: 'Fitculator web',
+    title: 'Fitculator web ',
+    businessform: '(b2c)',
     position: 'Fullstack Developer (internship)',
     stacks: [
       'Next.js 14 (SSR)',
@@ -31,6 +33,7 @@ const FitculatorWorkCardListData: WorkCard[] = [
     id: 2,
     duration: 'November 2024',
     title: 'Fitculator x Orevo',
+    businessform: '(b2b)',
     position: 'Frontend Developer',
     stacks: ['Next.js 14 (SSR)', 'TypeScript', 'TailwindCSS'],
     github: 'https://github.com/BoostPerformance/fitculator-io',
@@ -41,6 +44,7 @@ const FitculatorWorkCardListData: WorkCard[] = [
     id: 3,
     duration: 'December 2024',
     title: 'Fitculator x Wegobuy',
+    businessform: '(b2h)',
     position: 'Frontend Developer',
     stacks: ['Next.js 14 (SSR)', 'TypeScript', 'TailwindCSS'],
     github: 'https://github.com/BoostPerformance/fitculator-io',
@@ -50,7 +54,8 @@ const FitculatorWorkCardListData: WorkCard[] = [
   {
     id: 4,
     duration: 'Janurary 2025 (on going)',
-    title: 'Fitculator x F45 (b2b)',
+    title: 'Fitculator x F45',
+    businessform: '(b2b)',
     position: 'Fullstack Developer',
     stacks: [
       'Next.js 14 (SSR)',

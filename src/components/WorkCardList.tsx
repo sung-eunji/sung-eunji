@@ -1,5 +1,6 @@
 import FitculatorWorkCardListData from '../data/FitculatorWorkCardListData';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 // interface ProjectCardProps {
 //   onCardClick: (id: number) => void; //
@@ -10,17 +11,24 @@ export default function WorkCardList() {
   const handleCardClick = (id: number) => {
     navigate(`/fitculator/${id}`);
   };
+  const { t } = useTranslation();
   return (
-    <div className="flex flex-col gap-[3rem] items-left py-[5rem] sm:pt-[3rem] sm:pb-[6.5rem] sm:gap-[5rem]">
+    <div className="flex flex-col gap-[3rem] items-center py-[5rem] sm:pt-[3rem] sm:pb-[6.5rem] sm:gap-[5rem]">
       {FitculatorWorkCardListData.slice()
         .reverse()
         .map((card) => (
-          <div className="flex gap-[0.5rem] w-[35rem] sm:w-[20rem]">
-            <div className="flex flex-col items-start gap-[1rem] sm:gap-[2rem]">
-              <div className="flex flex-col items-start w-[25rem] mt-[0.5rem] sm:w-[10rem]">
-                <h1 className="text-1.7-700 text-gray-800 dark:text-gray-200 sm:text-1.1-700 text-left">
-                  {card.title}
-                </h1>
+          <div className="flex gap-[5rem] w-[45rem] sm:w-[20rem]">
+            <div className="flex flex-col items-start gap-[4rem] sm:gap-[2rem]">
+              <div className="flex flex-col items-start w-[18rem] mt-[0.5rem] sm:w-[10rem]">
+                <div className="flex items-center gap-[0.2rem] w-[20rem]">
+                  <h1 className="text-1.7-700 text-gray-800 dark:text-gray-200 sm:text-1.1-700 text-left">
+                    {card.title}
+                  </h1>
+                  <span className="text-0.7-300 text-gray-700 dark:text-gray-200 sm:text-1.1-700  border-orange-400 border-[0.01rem] rounded-[1rem] py-[0.2rem] px-[0.4rem] bg-orange-300 drop-shadow">
+                    {card.businessform}
+                  </span>
+                </div>
+
                 <p className="text-1-500 text-gray-500 dark:text-gray-200 sm:text-0.7-300">
                   {card.duration}
                 </p>
@@ -30,7 +38,7 @@ export default function WorkCardList() {
                 key={card.id}
                 onClick={() => handleCardClick(card.id)}
               >
-                see detail →
+                {t(`see-details`)} →
               </button>
             </div>
             <img
@@ -40,6 +48,16 @@ export default function WorkCardList() {
             />
           </div>
         ))}
+      <div>
+        <button
+          className="hover:bg-gray-300 p-[0.7rem] rounded-[1rem] text-gray-700 bg-gray-200 dark:hover:bg-gray-300 hover:drop-shadow-md sm:text-0.7-300 sm:p-[0.4rem] sm:rounded-[0.7rem]"
+          onClick={() => {
+            navigate('/works');
+          }}
+        >
+          ← {t(`back-button`)}
+        </button>
+      </div>
     </div>
   );
 }

@@ -23,7 +23,7 @@ export default function ProjectsinWork() {
   }
 
   return (
-    <div className="flex flex-col gap-[3rem] py-[5rem] dark:bg-gray-700 dark:text-gray-200 items-center sm:w-full sm:pt-[1rem] sm:pb-[3rem] sm:gap-[0.5rem]">
+    <div className="flex flex-col gap-[3rem] items-center py-[5rem] sm:pt-[3rem] sm:pb-[6.5rem] sm:gap-[5rem]">
       <div className="flex flex-col gap-[0.5rem] items-center py-[2rem]">
         <div className="flex flex-col items-center gap-[5rem] sm:gap-0">
           <div className="flex flex-col items-center">
