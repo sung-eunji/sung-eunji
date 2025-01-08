@@ -5,6 +5,12 @@ import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 import FitculatorWorkCardListData from '../data/FitculatorWorkCardListData';
 
+interface ProjectSection {
+  title?: string;
+  description: string;
+  bullets?: string[];
+}
+
 export default function ProjectsinWork() {
   const { t } = useTranslation();
   const { id } = useParams();
@@ -21,6 +27,31 @@ export default function ProjectsinWork() {
   if (!selectedWork) {
     return <div>Item not found</div>;
   }
+
+  // renderProjectSection 함수를 수정합니다
+  const renderProjectSection = (sectionKey: string, title?: string) => {
+    const section = t(`Work-items.Fitculator.${id}.${sectionKey}`, {
+      returnObjects: true,
+    }) as ProjectSection;
+
+    if (!section) return null;
+
+    return (
+      <div className="text-1.25-300 text-start sm:text-0.8-400">
+        <h2 className="pb-[1rem] text-1.25-500">{title || section.title}</h2>
+        <p className="sm:text-0.7-300">{section.description}</p>
+        {section.bullets && (
+          <ul className="list-disc pl-6 mt-4 space-y-2">
+            {section.bullets.map((bullet, index) => (
+              <li key={index} className="sm:text-0.7-300">
+                {bullet}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    );
+  };
 
   return (
     <div className="flex flex-col gap-[3rem] items-center py-[5rem] sm:pt-[3rem] sm:pb-[6.5rem] sm:gap-[5rem]">
@@ -69,28 +100,21 @@ export default function ProjectsinWork() {
             </li>
           ))}
         </ul>
+
+        <div className="flex flex-col items-start border-t-[0.2rem] border-b-[0.2rem] p-[2rem] drop-shadow-sm border-orange-200 sm:w-[20rem] sm:p-[0.2rem] sm:py-[1.5rem]">
+          <div className="w-[50rem] flex flex-col gap-[2rem] sm:w-[21rem]">
+            {/* <h1 className="text-1.5-500 pb-[2rem] sm:text-1-500">
+              {t(`Work-items.Fitculator.${id}.overview.title`)}
+            </h1> */}
+            {renderProjectSection('overview')}
+            {renderProjectSection('technical')}
+            {renderProjectSection('achievements')}
+          </div>
+        </div>
       </div>
 
       {/* <div className="flex flex-col gap-[5rem] items-center sm:w-full sm:gap-[2rem]">
-        <div className="flex flex-col items-start border-t-[0.2rem] border-b-[0.2rem] p-[2rem] drop-shadow-sm border-orange-200 sm:w-[20rem] sm:p-[0.2rem] sm:py-[1.5rem]">
-          <h1 className="text-1.5-500 pb-[2rem] sm:text-1-500">
-            {t(`Work-items.title1-learn`)}
-          </h1>
-          <div className="w-[50rem] flex flex-col gap-[2rem] sm:w-[21rem]">
-            <div className="text-1.25-300 text-start sm:text-0.8-400">
-              <h2 className="pb-[1rem]">{t(`Work-items.${id}.subtitle1-1`)}</h2>
-              <p className="sm:text-0.7-300">
-                {t(`Work-items.${id}.description1-1`)}
-              </p>
-            </div>
-            <div className="text-1.25-300 text-start sm:text-0.8-400">
-              <h2 className="pb-[1rem]">{t(`Work-items.${id}.subtitle1-2`)}</h2>
-              <p className="sm:text-0.7-300">
-                {t(`Work-items.${id}.description1-2`)}
-              </p>
-            </div>
-          </div>
-        </div>
+       
 
         <div className="flex flex-col items-end p-[2rem] sm:p-[0.5rem] sm:w-[20rem]">
           <h1 className="text-1.5-500 pb-[2rem] sm:text-1-500">
