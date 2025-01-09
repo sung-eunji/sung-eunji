@@ -184,5 +184,13 @@
         }
       }
     }
+  },
+
+  "About": {
+    "title1": "Collaboration Skills",
+    "description1": "I'm a developer with experience as a former choreographer. Web services act as a lubricant for the socio-economic environment, while art serves to connect people. Although these two fields contribute different values, achieving great results requires a positive work environment for both. I believe that true efficiency comes not from merely chasing quick results, but from deeply contemplating the subject, sharing ideas openly, and working thoughtfully. I find immense joy in exchanging diverse opinions and take pleasure in the dynamic that unfolds from collaboration, leading to satisfying outcomes. Guided by metacognitive thinking, I strive to work proactively, continually seeking self-awareness and growth. Drawing from my background in dance, where I analyzed my body's form and the audience's gaze, I apply that experience to the development process by assessing the relevance of questions and understanding the roles of server and client, all through active communication aimed at continuous improvement.",
+
+    "title2": "Technical Skills",
+    "description2": "Reliability is the cornerstone of any service and builds trust with users. Automated services that require less human intervention help maintain robust reliability. I aim to establish a Continuous Integration and Continuous Deployment (CI/CD) system to ensure that reliability is a top priority. In one of my projects, I set up a CI/CD pipeline using Vercel, which streamlined the development process and allowed us to detect and resolve potential errors during deployment quickly. Additionally, I’m exploring deployment tools like AWS and Jenkins to continuously deliver highly reliable automated services."
   }
 }
