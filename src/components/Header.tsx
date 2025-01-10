@@ -20,7 +20,8 @@ export default function Header({
       <div className="pl-[1rem]">
         <a
           href={'/'}
-          className=" text-black lg:text-2-700 dark:text-gray-200 hover:text-orange-400 dark:hover:text-orange-400 sm:px-0 sm:text-1.1-700"
+          className=" text-black lg:text-2-700 
+          md:text-1.5-700 dark:text-gray-200 hover:text-orange-400 dark:hover:text-orange-400 sm:px-0 sm:text-1.1-700"
         >
           Eunji
         </a>
