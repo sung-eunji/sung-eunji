@@ -37,7 +37,7 @@ export default function ProjectsinWork() {
     if (!section) return null;
 
     return (
-      <div className="text-1.25-300 text-start sm:text-0.8-400">
+      <div className="text-1.25-300 text-start sm:text-0.8-400 md:px-[2rem]">
         <h2 className="pb-[1rem] text-1.25-500">{title || section.title}</h2>
         <p className="sm:text-0.7-300">{section.description}</p>
         {section.bullets && (
@@ -90,7 +90,7 @@ export default function ProjectsinWork() {
             </p>
           </div>
         </div>
-        <ul className="flex gap-[1rem] text-0.7-300 sm:text-0.5-500">
+        <ul className="flex gap-[1rem] text-0.7-300 sm:text-0.5-500 pb-[2rem]">
           {selectedWork.stacks.map((stack, index) => (
             <li
               className="bg-orange-300 dark:text-gray-600 rounded-[1rem] p-[0.3rem] "
@@ -101,7 +101,14 @@ export default function ProjectsinWork() {
           ))}
         </ul>
 
-        <div className="flex flex-col items-start border-t-[0.2rem] border-b-[0.2rem] p-[2rem] drop-shadow-sm border-orange-200 sm:w-[20rem] sm:p-[0.2rem] sm:py-[1.5rem]">
+        <div className="flex flex-col items-start border-t-[0.2rem] border-b-[0.2rem] p-[2rem] drop-shadow-sm border-orange-200 sm:w-[20rem] sm:p-[0.2rem] sm:py-[1.5rem] px-[3rem]">
+          <div className="w-full">
+            {selectedWork.examples?.map((item, index) => (
+              <>
+                <img key={index} src={item} alt="items" className="w-full" />
+              </>
+            ))}
+          </div>
           <div className="w-[50rem] flex flex-col gap-[2rem] sm:w-[21rem]">
             {/* <h1 className="text-1.5-500 pb-[2rem] sm:text-1-500">
               {t(`Work-items.Fitculator.${id}.overview.title`)}

@@ -52,8 +52,8 @@ export default {
       },
       screens: {
         lg: { min: '1025px' },
-        md: { max: '1024px' },
-        sm: { max: '768px' },
+        md: { min: '679px', max: '1024px' },
+        sm: { max: '680px' },
       },
     },
   },

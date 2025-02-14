@@ -6,8 +6,8 @@ export default function Home() {
       <div className="flex px-[6.5rem] gap-[2rem] items-center sm:px-[2.5rem] sm:flex-col-reverse md:justify-around md:px-[2rem]">
         <BriefIntro />
         <img
-          className="h-[20rem] rounded-[20rem] shadow-lg shadow-gray-300 sm:h-[10rem] md:h-[14rem]"
-          src="/assets/profile1.png"
+          className="object-cover h-[20rem] w-[20rem] rounded-full shadow-lg shadow-gray-300 sm:h-[8rem] sm:w-[8rem] md:h-[10rem] md:w-[10rem]"
+          src="/assets/profile-photo.jpg"
           alt="profile"
         />
       </div>

@@ -1,16 +1,16 @@
 import ProjectCardListData from '../data/ProjectCardListData';
 
 interface ProjectCardProps {
-  onCardClick: (id: number) => void; // onClick 함수는 number 타입의 ID를 받음
+  onCardClick: (id: number) => void;
 }
 
 export default function ProjectCardList({ onCardClick }: ProjectCardProps) {
   return (
-    <div className="flex flex-col gap-[3rem] items-center py-[5rem] sm:pt-[3rem] sm:pb-[6.5rem] sm:gap-[5rem]">
+    <div className="flex flex-col gap-[3rem] items-center py-[5rem] sm:pb-[6.5rem] sm:gap-[5rem] sm:pt-[5rem]">
       {ProjectCardListData.slice()
         .reverse()
-        .map((card) => (
-          <div className="flex gap-[0.5rem] w-[35rem] sm:w-[20rem]">
+        .map((card, index) => (
+          <div key={index} className="flex gap-[0.5rem] w-[35rem] sm:w-[20rem]">
             <div className="flex flex-col items-start gap-[4rem] sm:gap-[2rem]">
               <div className="flex flex-col items-start w-[17rem] mt-[0.5rem] sm:w-[10rem]">
                 <h1 className="text-1.7-700 text-gray-800 dark:text-gray-200 sm:text-1.1-700">

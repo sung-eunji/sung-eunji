@@ -1,8 +1,10 @@
+import { ReactNode } from 'react';
+
 interface Work {
   id: number;
   duration: string;
   title: string;
-  position: string;
+  position: ReactNode;
   stacks: string[];
   github: string;
   demoLink: string;
@@ -14,7 +16,11 @@ const WorkData: Work[] = [
     id: 1,
     duration: 'June 2024 (on going)',
     title: 'Fitculator',
-    position: 'Fullstack Developer (internship)',
+    position: (
+      <div>
+        Fullstack Developer <br /> <span>(internship, freelance) </span>
+      </div>
+    ),
     stacks: [
       'Next.js 14 (SSR)',
       'TypeScript',

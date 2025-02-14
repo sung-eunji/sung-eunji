@@ -6,16 +6,16 @@ interface DarkMode {
 export default function DarkMode({ toggleMode, darkmode }: DarkMode) {
   return (
     <button
-      className="flex items-center justify-center w-[10rem] h-[10rem] md:w-[4rem] md:h-[4rem] sm:h-[2rem] sm:w-[2rem]"
+      className="flex items-center justify-center w-8 h-8 md:w-6 md:h-6 sm:w-5 sm:h-5"
       onClick={toggleMode}
     >
       <img
-        className="hover:invert-50 "
+        className="hover:invert-50 w-full h-full sm:w-[1.2rem] sm:h-[1.2rem]"
         src={
           darkmode === 'dark' ? '/assets/darkmode.svg' : '/assets/lightmode.svg'
         }
         alt="Toggle mode"
-        width={20}
+        width={17}
       />
     </button>
   );

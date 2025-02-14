@@ -8,6 +8,7 @@ interface WorkCard {
   github: string;
   logo: string;
   stacks: string[];
+  examples?: string[];
 }
 
 const FitculatorWorkCardListData: WorkCard[] = [
@@ -67,6 +68,11 @@ const FitculatorWorkCardListData: WorkCard[] = [
     github: 'https://github.com/BoostPerformance/fitculator-io',
     demoLink: 'https://fitculator.io',
     logo: '/assets/F45-logo.png',
+    examples: [
+      '/assets/admin-page1.png',
+      '/assets/admin-page3.png',
+      '/assets/admin-page2.png',
+    ],
   },
 ];
 
