@@ -73,19 +73,23 @@ export default function ProjectItem() {
       <div className="flex flex-col gap-[5rem] items-center sm:w-full sm:gap-[2rem]">
         <div className="flex flex-col items-start border-t-[0.2rem] border-b-[0.2rem] p-[2rem] drop-shadow-sm border-orange-200 sm:w-[20rem] sm:p-[0.2rem] sm:py-[1.5rem]">
           <h1 className="text-1.5-500 pb-[2rem] sm:text-1-500">
-            {t(`-items.title1-learn`)}
+            {t(`Project-items.title1-learn`)}
           </h1>
           <div className="w-[50rem] flex flex-col gap-[2rem] sm:w-[21rem]">
             <div className="text-1.25-300 text-start sm:text-0.8-400">
-              <h2 className="pb-[1rem]">{t(`-items.${id}.subtitle1-1`)}</h2>
+              <h2 className="pb-[1rem]">
+                {t(`Project-items.${id}.subtitle1-1`)}
+              </h2>
               <p className="sm:text-0.7-300">
-                {t(`-items.${id}.description1-1`)}
+                {t(`Project-items.${id}.description1-1`)}
               </p>
             </div>
             <div className="text-1.25-300 text-start sm:text-0.8-400">
-              <h2 className="pb-[1rem]">{t(`-items.${id}.subtitle1-2`)}</h2>
+              <h2 className="pb-[1rem]">
+                {t(`Project-items.${id}.subtitle1-2`)}
+              </h2>
               <p className="sm:text-0.7-300">
-                {t(`-items.${id}.description1-2`)}
+                {t(`Project-items.${id}.description1-2`)}
               </p>
             </div>
           </div>

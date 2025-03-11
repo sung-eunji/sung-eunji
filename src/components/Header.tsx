@@ -7,6 +7,8 @@ interface HeaderProps {
   changeLanguage: (lang: string) => void;
   toggleMode: () => void;
   darkmode: string;
+  langDropdown: boolean;
+  setIsOpen: (isOpen: boolean) => void; // 추가된 프롭
 }
 
 export default function Header({
@@ -14,6 +16,8 @@ export default function Header({
   changeLanguage,
   toggleMode,
   darkmode,
+  langDropdown,
+  setIsOpen,
 }: HeaderProps) {
   return (
     <div className="bg-gray-100 z-50 fixed  flex gap-[3rem] items-center justify-center sm:gap-[1.4rem] lg:py-[1rem] border-b-2 sm:w-full w-full md:justify-around top-0 left-0 right-0 ">
@@ -33,6 +37,8 @@ export default function Header({
           changeLanguage={changeLanguage}
           toggleMode={toggleMode}
           darkmode={darkmode}
+          langDropdown={langDropdown}
+          setIsOpen={setIsOpen}
         />
       </div>
     </div>

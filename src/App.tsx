@@ -15,15 +15,18 @@ import ProjectsinWork from './components/ProjectsinWork';
 import WorkCardList from './components/WorkCardList';
 
 function App() {
-  const [activeLang, setActiveLang] = useState('en');
+  const [activeLang, setActiveLang] = useState('');
   const [mode, setMode] = useState('light');
 
   const languageRef = useRef<null | HTMLDivElement>(null);
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
-    setActiveLang((prevLang) => (prevLang === 'en' ? 'ko' : 'en'));
+    setActiveLang(lang);
+    setIsOpen(!isOpen);
+    console.log(lang);
   };
 
   const toggleMode = () => {
@@ -41,6 +44,8 @@ function App() {
         changeLanguage={changeLanguage}
         toggleMode={toggleMode}
         darkmode={mode}
+        langDropdown={isOpen}
+        setIsOpen={setIsOpen}
       />
 
       <AnimatePresence mode="wait">

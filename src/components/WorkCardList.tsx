@@ -16,8 +16,11 @@ export default function WorkCardList() {
     <div className="flex flex-col gap-[3rem] items-center py-[5rem] sm:pt-[4rem] sm:pb-[6.5rem] sm:gap-[5rem] md:pt-[6rem]">
       {FitculatorWorkCardListData.slice()
         .reverse()
-        .map((card) => (
-          <div className="flex lg:gap-[5rem] sm:gap-[3rem] w-[45rem] sm:w-[20rem] md:gap-[4rem]">
+        .map((card, index) => (
+          <div
+            key={index}
+            className="flex lg:gap-[5rem] sm:gap-[3rem] w-[45rem] sm:w-[20rem] md:gap-[4rem]"
+          >
             <div className="flex flex-col items-start gap-[4rem] sm:gap-[2rem]">
               <div className="flex flex-col items-start w-[18rem] mt-[0.5rem] sm:w-[10rem]">
                 <div className="flex sm:flex-col sm:items-start items-center gap-[0.2rem] w-[20rem]">

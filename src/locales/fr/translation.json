@@ -1,0 +1,196 @@
+{
+  "back-button": "retour au précédent",
+  "see-details": "voir les détails",
+  "header": {
+    "ViteandReact": "Vite et React",
+    "language": "Langue",
+    "help": "Aide"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "shopping-mall": "Centre commercial"
+  },
+  "briefIntro": {
+    "title": "Bonjour, je suis Eunji",
+    "description": "Je suis développeuse web React, spécialisée dans le frontend avec une solide base dans l'écosystème JavaScript, incluant des technologies comme Next.js, TypeScript et Tailwind CSS. Je viens de Corée du Sud et je suis actuellement basée en France."
+  },
+  "Project-items": {
+    "title1-learn": "De ce projet, j'ai appris...",
+    "title2-challenges": "Défis rencontrés pendant le projet",
+    "title3-solution": "Solutions mises en œuvre",
+    "title4-result": "Résultat",
+
+    "1": {
+      "subtitle1-1": "1. Gestion dynamique des données",
+      "description1-1": "En travaillant sur ce projet, j'ai développé une solide compréhension de la gestion des données dynamiques, y compris la détection des changements et l'optimisation des mises à jour d'état. Cette expérience a affiné ma capacité à gérer des flux de données complexes et à améliorer les performances, particulièrement dans le rendu.",
+      "subtitle1-2": "2. Programmation en binôme et en groupe",
+      "description1-2": "Participer à des sessions de programmation en binôme et en groupe m'a permis de devenir plus adaptable à différents styles de travail. Travailler côte à côte avec des coéquipiers a non seulement amélioré mes compétences techniques, mais a également renforcé ma capacité à donner et recevoir des retours constructifs. Cela a contribué à créer une dynamique d'équipe plus forte et plus cohésive.",
+
+      "subtitle2-1": "1. Optimisation de la vitesse de rendu",
+      "description2-1": "La gestion des données dynamiques avec les hooks était difficile en raison de problèmes de performance, notamment le scintillement des images, les retards de chargement des images d'arrière-plan et les erreurs de fonction map qui entraînaient parfois du contenu manquant ou des pages d'erreur. Ces problèmes affectaient significativement l'expérience utilisateur.",
+      "subtitle2-2": "2. Confusion dans les rôles d'équipe pendant la programmation en binôme",
+      "description2-2": "Dans les premières étapes des sessions de programmation en binôme et en groupe, il y avait une certaine confusion concernant les rôles de pilote et de navigateur, ce qui a conduit à des inefficacités. Cela rendait difficile pour l'équipe de rester alignée et entravait parfois la progression.",
+
+      "subtitle3-1": "1. Segmentation des étapes de traitement des données",
+      "description3-1": "Pour résoudre les problèmes de gestion des données, nous avons implémenté des blocs try-catch pour décomposer les étapes de traitement des données. Cette solution a aidé à isoler les erreurs, permettant une détection, une gestion et une récupération plus rapides. De plus, cela a amélioré les performances de l'application en rationalisant le flux de données.",
+      "subtitle3-2": "2. Clarification des rôles et amélioration de la communication",
+      "description3-2": "En tant qu'équipe, nous avons clarifié les rôles de pilote et de navigateur dans la programmation en binôme, ce qui a considérablement amélioré la coordination de l'équipe. Grâce à une communication régulière et à des retours, nous avons favorisé un environnement plus collaboratif qui nous a aidés à dépasser les inefficacités initiales et à travailler plus efficacement ensemble.",
+
+      "description4-1": "En surmontant ces défis, j'ai renforcé mes capacités en gestion dynamique des données et en optimisation des performances, apprenant à gérer plus efficacement les problèmes de rendu complexes. De plus, l'expérience de collaboration en équipe, notamment par la programmation en binôme et en groupe, a amélioré mes compétences en communication et mon adaptabilité dans un cadre d'équipe. Enfin, j'ai développé une compréhension approfondie de la gestion des erreurs et du débogage, ce qui a encore amélioré la qualité globale et les performances de l'application."
+    },
+    "2": {
+      "subtitle1-1": "1. Optimisation avancée des performances",
+      "description1-1": "Grâce à ce projet, j'ai acquis une compréhension plus approfondie des goulots d'étranglement de performance dans les applications web, particulièrement liés au rendu. J'ai appris à utiliser les hooks useMemo et useCallback de React pour minimiser les re-rendus inutiles, conduisant à des améliorations significatives de l'expérience utilisateur. De plus, je me suis concentrée sur l'optimisation des stratégies de récupération de données et la réduction des fuites de mémoire pour assurer une interaction fluide.",
+      "subtitle1-2": "2. Communication efficace en équipe",
+      "description1-2": "En m'engageant dans la programmation en binôme et en groupe, j'ai affiné ma capacité à communiquer clairement des concepts techniques complexes avec mes coéquipiers. Nous avons régulièrement échangé des retours pour identifier les problèmes de performance et réfléchir à des stratégies d'optimisation. Cette approche collaborative a renforcé notre efficacité à résoudre les problèmes et a contribué à créer un environnement d'équipe productif.",
+
+      "subtitle2-1": "1. Temps de chargement initial lent et décalage de rendu",
+      "description2-1": "Au début, l'application souffrait de temps de chargement lents et de retards de rendu lors du traitement de grands ensembles de données. Les composants se rendaient fréquemment à nouveau inutilement, résultant en des performances lentes et une mauvaise expérience utilisateur, particulièrement pendant les opérations intensives comme le filtrage et la visualisation des données.",
+      "subtitle2-2": "2. Gestion des effets secondaires avec les hooks React",
+      "description2-2": "L'optimisation des effets secondaires avec des hooks comme useEffect présentait des défis. Une récupération inefficace des données et des dépendances d'effet non optimisées causaient des appels API redondants, des fuites de mémoire et des baisses de performance, surtout pendant les changements d'état rapides et le démontage des composants.",
+
+      "subtitle3-1": "1. Techniques de mémorisation et de debouncing",
+      "description3-1": "Pour résoudre les inefficacités de rendu, j'ai utilisé useMemo et useCallback de React pour optimiser le rendu des composants. En mémorisant les calculs coûteux et en appliquant le debouncing aux entrées de recherche, j'ai réduit les rendus redondants et amélioré la réactivité de l'application. Ces techniques ont assuré que les mises à jour n'étaient appliquées que lorsque nécessaire, optimisant ainsi les performances.",
+      "subtitle3-2": "2. Raffiner la récupération des données avec le chargement paresseux",
+      "description3-2": "Nous avons introduit le chargement paresseux pour les composants non critiques et implémenté la pagination pour les grands ensembles de données afin de minimiser les temps de chargement initiaux. De plus, j'ai remanié les stratégies de récupération de données pour éviter les appels API excessifs, garantissant que les composants n'étaient mis à jour que lorsque les données avaient réellement changé. Ces ajustements ont réduit la consommation de mémoire et amélioré les performances globales de l'application.",
+      "description4-1": "En relevant les défis des temps de chargement lents et en optimisant les hooks React, j'ai significativement amélioré les performances de l'application, réduisant les re-rendus inutiles et améliorant la vitesse d'interaction utilisateur. Ces efforts m'ont appris à gérer stratégiquement les effets secondaires et les mises à jour d'état, menant à des applications plus efficaces et évolutives. De plus, le processus collaboratif des sessions de programmation en binôme et en groupe a amélioré ma capacité à communiquer efficacement les détails techniques et à favoriser une mentalité de résolution de problèmes au sein de l'équipe."
+    },
+    "3": {
+      "subtitle1-1": "1. Compréhension approfondie de l'authentification OAuth 2.0",
+      "description1-1": "Grâce à ce projet, j'ai acquis une compréhension complète d'OAuth 2.0, particulièrement concernant le flux d'authentification et d'autorisation entre les clients, les serveurs et les fournisseurs tiers. J'ai appris à gérer efficacement les tokens d'accès et les tokens de rafraîchissement, ce qui a amélioré la sécurité globale et l'expérience utilisateur de l'application. Cela a également approfondi ma connaissance des communications API externes et de la gestion efficace des tokens OAuth.",
+      "subtitle1-2": "2. Résolution collaborative de problèmes avec les ingénieurs backend",
+      "description1-2": "En m'engageant dans une étroite collaboration avec les ingénieurs backend, j'ai renforcé ma capacité à communiquer clairement les défis techniques, particulièrement liés aux protocoles d'authentification. Nous avons travaillé ensemble pour résoudre les problèmes d'API et améliorer les stratégies de stockage des tokens. Cet environnement collaboratif nous a permis d'implémenter OAuth 2.0 plus efficacement et d'assurer une intégration fluide des fonctionnalités de connexion/inscription.",
+
+      "subtitle2-1": "1. Gestion de l'expiration des tokens OAuth 2.0 et sécurité",
+      "description2-1": "Au début, j'ai rencontré des difficultés à gérer l'expiration des tokens et le cycle de vie des tokens OAuth 2.0. Le défi était d'assurer des flux de déconnexion et de rafraîchissement des tokens sécurisés tout en maintenant la persistance de session pour l'utilisateur. Les erreurs de gestion des tokens conduisaient parfois à la déconnexion inattendue des utilisateurs, ce qui impactait négativement l'expérience utilisateur.",
+      "subtitle2-2": "2. Chevauchement de validation avec plusieurs bibliothèques",
+      "description2-2": "Lors de l'intégration d'OAuth 2.0 avec le processus de connexion/inscription, j'ai utilisé React-hook-form, zod et shad/cn pour la validation de formulaire. Cependant, l'utilisation de plusieurs bibliothèques de validation a entraîné des messages d'erreur qui se chevauchaient, rendant difficile la fourniture de retours clairs aux utilisateurs et le maintien d'un flux d'inscription/connexion fluide.",
+
+      "subtitle3-1": "1. Limiter la validation zod et optimiser la gestion des tokens",
+      "description3-1": "Pour résoudre les problèmes de validation, j'ai restreint zod aux tâches de validation de base et simplifié la gestion des formulaires en ajoutant des événements onClick personnalisés pour réinitialiser les messages d'erreur. De plus, j'ai amélioré le flux de gestion des tokens en segmentant le processus OAuth 2.0 à l'aide de blocs try-catch pour gérer efficacement l'expiration des tokens et la récupération de session. Cette approche a assuré un processus d'authentification plus sécurisé et cohérent.",
+      "subtitle3-2": "2. Améliorer la communication OAuth avec le support backend",
+      "description3-2": "J'ai travaillé en étroite collaboration avec les ingénieurs backend pour affiner le flux OAuth 2.0. Nous avons examiné la documentation de l'API de connexion Kakao pour assurer une communication appropriée entre le client, le serveur et le fournisseur OAuth. En définissant clairement les mécanismes de stockage des tokens (stockage local, stockage de session, cookies), nous avons renforcé la sécurité et réduit la probabilité d'erreurs CORS pendant la communication API.",
+
+      "description4-1": "En surmontant les défis liés à la gestion des tokens OAuth 2.0 et à la validation des formulaires, j'ai considérablement amélioré la sécurité et la fonctionnalité des processus de connexion/inscription. Ce projet m'a aidé à maîtriser l'authentification basée sur les tokens et le cycle de vie OAuth 2.0, menant à une meilleure expérience utilisateur et à des protocoles de sécurité plus robustes. De plus, travailler avec des ingénieurs backend tout au long du projet a renforcé mes compétences en communication et ma capacité à résoudre des problèmes techniques de manière collaborative."
+    }
+  },
+
+  "Work-items": {
+    "Fitculator": {
+      "1": {
+        "overview": {
+          "description": "J'ai dirigé le développement d'une application de fitness moderne utilisant Next.js 14.2 avec TypeScript, implémentant le rendu côté serveur (SSR) pour des performances et un SEO optimaux.",
+          "bullets": [
+            "Lancement réussi en septembre 2024",
+            "Conception d'un schéma de base de données optimisé avec Supabase",
+            "Implémentation d'une couverture de test complète avec Prisma",
+            "Livraison d'une interface de paiement intuitive basée sur les retours utilisateurs"
+          ]
+        },
+        "technical": {
+          "title": "Implémentation technique",
+          "description": "Construit avec une pile technologique moderne axée sur les performances et l'évolutivité"
+        },
+        "achievements": {
+          "title": "Réalisations clés",
+          "description": "Apporte des améliorations significatives aux performances de l'application et à l'expérience utilisateur",
+          "bullets": [
+            "Lancement réussi avec des retours utilisateurs positifs",
+            "Performance de base de données optimisée pour les utilisateurs simultanés",
+            "Établissement de flux de développement efficaces",
+            "Création d'une base évolutive pour les fonctionnalités futures"
+          ]
+        }
+      },
+      "2": {
+        "overview": {
+          "description": "Orevo est un espace de fitness hors ligne ciblant les femmes de 40 à 60 ans en Corée, exploité par Fitculator.",
+          "bullets": [
+            "Livraison d'un site web responsive, mobile-first",
+            "Amélioration du chargement initial des pages avec des stratégies SSR",
+            "Gestion actuelle de la collecte d'utilisateurs via des formulaires Tally",
+            "Planification du développement du schéma de données pour février 2025"
+          ]
+        },
+        "technical": {
+          "title": "Stack technique et implémentation",
+          "description": "Construit avec des technologies web modernes axées sur la performance"
+        },
+        "achievements": {
+          "title": "Impact du projet",
+          "description": "Établissement réussi d'une présence en ligne pour un espace de fitness hors ligne",
+          "bullets": [
+            "Amélioration de l'engagement des utilisateurs mobiles",
+            "Optimisation SEO renforcée",
+            "Maintien des métriques de performance sur tous les appareils",
+            "Établissement des bases pour l'intégration future de formulaires"
+          ]
+        }
+      },
+      "3": {
+        "overview": {
+          "description": "Un projet B2H (Business-to-Hospital) connectant le lancement coréen de Wegobuy avec des programmes de fitness systématisés pour les utilisateurs hospitaliers.",
+          "bullets": [
+            "Développement d'une structure rationalisée pour les équipes hospitalières",
+            "Participation régulière aux réunions de conception",
+            "Création d'une interface fiable grâce à la collaboration d'équipe",
+            "Conception simplifiée mais engageante pour les professionnels médicaux"
+          ]
+        },
+        "technical": {
+          "title": "Approche technique",
+          "description": "Axée sur la conception et la fonctionnalité conformes aux normes de santé",
+          "bullets": [
+            "Architecture simplifiée pour l'environnement de soins de santé",
+            "Conception d'interface conviviale",
+            "Visualisation de données simplifiée",
+            "Modèles de conception conformes aux normes de santé"
+          ]
+        },
+        "achievements": {
+          "title": "Résultats du projet",
+          "description": "Établissement réussi de l'intégration de programmes de fitness axés sur les hôpitaux",
+          "bullets": [
+            "Engagement efficace des équipes hospitalières",
+            "Processus d'adoption de programme simplifié",
+            "Expérience utilisateur améliorée pour le personnel médical",
+            "Création d'une base pour les futurs partenariats hospitaliers"
+          ]
+        }
+      },
+      "4": {
+        "overview": {
+          "description": "Développement de la page d'administration pour la succursale F45 Eulji à Séoul, s'appuyant sur les insights de l'expérience de coaching de la PDG Hyunji Roo.",
+          "bullets": [
+            "Conception de l'architecture API REST pour les coachs de fitness",
+            "Implémentation d'outils d'analyse de données complets",
+            "Création d'une interface administrateur intuitive",
+            "Amélioration des capacités d'optimisation de flux de travail"
+          ]
+        },
+        "technical": {
+          "title": "Implémentation technique",
+          "description": "Construit avec les dernières technologies pour des performances optimales"
+        },
+        "achievements": {
+          "title": "Progrès actuel",
+          "description": "Développement en cours avec des étapes importantes atteintes",
+          "bullets": [
+            "Formats de réponse API standardisés",
+            "Implémentation d'une gestion efficace des erreurs",
+            "Optimisation des stratégies de récupération de données",
+            "Amélioration de la mise en cache et des mises à jour en arrière-plan"
+          ]
+        }
+      }
+    }
+  },
+
+  "About": {
+    "title1": "Compétences de collaboration",
+    "description1": "Je suis une développeuse avec une expérience en tant qu'ancienne chorégraphe. Les services web agissent comme un lubrifiant pour l'environnement socio-économique, tandis que l'art sert à connecter les gens. Bien que ces deux domaines apportent des valeurs différentes, l'obtention de grands résultats nécessite un environnement de travail positif pour les deux. Je crois que la véritable efficacité ne vient pas simplement de la poursuite de résultats rapides, mais d'une réflexion profonde sur le sujet, du partage ouvert d'idées et d'un travail réfléchi. Je trouve une immense joie dans l'échange d'opinions diverses et prends plaisir à la dynamique qui se dégage de la collaboration, conduisant à des résultats satisfaisants. Guidée par une pensée métacognitive, je m'efforce de travailler de manière proactive, recherchant continuellement la conscience de soi et la croissance. Puisant dans mon expérience en danse, où j'analysais la forme de mon corps et le regard du public, j'applique cette expérience au processus de développement en évaluant la pertinence des questions et en comprenant les rôles du serveur et du client, le tout par une communication active visant à l'amélioration continue.",
+
+    "title2": "Compétences techniques",
+    "description2": "La fiabilité est la pierre angulaire de tout service et construit la confiance avec les utilisateurs. Les services automatisés qui nécessitent moins d'intervention humaine aident à maintenir une fiabilité robuste. Je vise à établir un système d'Intégration Continue et de Déploiement Continu (CI/CD) pour garantir que la fiabilité soit une priorité absolue. Dans l'un de mes projets, j'ai mis en place un pipeline CI/CD utilisant Vercel, qui a rationalisé le processus de développement et nous a permis de détecter et de résoudre rapidement les erreurs potentielles lors du déploiement. De plus, j'explore des outils de déploiement comme AWS et Jenkins pour fournir en continu des services automatisés hautement fiables."
+  }
+}
