@@ -18,9 +18,9 @@ export default function Language({
   activeLang,
 }: LanguageProps) {
   return (
-    <div className="flex gap-[5rem] text-1.7-500 sm:text-0.9-500 sm:gap-[0.6rem] pl-[1rem] sm:pl-0 ">
+    <div className="flex gap-[5rem] text-1.7-500 sm:text-0.9-500 sm:gap-[2rem] pl-[1rem] sm:pl-0 ">
       <div className="">
-        <div className="absolute top-5">
+        <div className="absolute top-5 sm:top-0.5">
           <button
             className={`dark:text-gray-200  hover:text-orange-400 dark:hover:text-orange-400 navMenuItem`}
             onClick={() => setIsOpen(!langDropdown)}
@@ -35,7 +35,7 @@ export default function Language({
             {/* 현재 선택된 언어 표시 */}
           </button>
           {langDropdown && (
-            <div className="relative list-none p-5">
+            <div className="relative list-none py-2 flex flex-col gap-2">
               <li>
                 <button onClick={() => changeLanguage('en')}>🇬🇧</button>
               </li>
