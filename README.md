@@ -45,7 +45,7 @@
  <img align="right" width="350" src="/assets/programmer.gif" alt="Coding gif" />
   
  📧 &emsp; Reach me anytime: sungeunji.e@gmail.com<br/><br/>
- 💬 &emsp; Ask me about anything [here](https://github.com/Nebaisgood/Nebaisgood/issues)
+
 
 </p>
 
